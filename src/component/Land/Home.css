@@ -1,0 +1,384 @@
+/* Reset styles and global styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+  }
+  
+  /* Set background color for the entire screen */
+  body {
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+    min-height: 100vh;
+  }
+  
+  /* Add some general spacing */
+  .gap {
+    margin-right: 20px; /* Adjust the margin as needed */
+  }
+  
+  /* HOME */
+  .home {
+    width: 100%;
+    height: 100vh;
+  }
+  
+  /* HEADER */
+  .header {
+    margin-left: -280px;
+    width: 155%;
+    height: 120px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+    padding: 10px 40px;
+    background: linear-gradient(rgb(146, 16, 16), rgb(180, 44, 44), rgb(116, 9, 9));
+  }
+  
+  .logo h1 {
+    font-size: 35px;
+    color: #fff;
+    font-weight: 600;
+  }
+  
+  .header .navigation {
+    list-style: none;
+  }
+  
+  .header .navigation ul li {
+    display: inline-block;
+    padding: 10px 40px;
+    overflow: hidden;
+  }
+  
+  .header .navigation ul li h2 {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    text-decoration: none;
+    float: left;
+    cursor: pointer;
+  }
+  
+  .header .btn {
+    padding: 10px 50px;
+  }
+  
+  .header .btn button,
+  .col button {
+    padding: 10px 30px;
+    background-color: blue;
+    border: 1px solid blue;
+    border-radius: 6px;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+  }
+  
+  /* MAIN */
+  .main {
+    display: flex;
+    height: 80%;
+    align-items: center;
+  }
+  
+  /* Dropdown styling */
+  .dropdown {
+    margin-bottom: 400px; /* Add margin to the bottom if needed */
+  }
+  
+  .dropdown-textbox {
+    position: relative;
+  }
+  
+  .dropdown-textbox input {
+    width: 200px; /* Adjust the width as needed */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .dropdown-textbox ul {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 200px; /* Adjust the width as needed */
+    list-style: none;
+    padding: 10px;
+    margin: 0;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: none;
+  }
+  
+  .dropdown-textbox ul li {
+    padding: 8px;
+    cursor: pointer;
+  }
+  
+  .dropdown-textbox ul li:hover {
+    background-color: #f0f0f0;
+  }
+  
+  /* Rest of your existing CSS */
+  
+.card {
+    width: 170px;
+    display: inline-block;
+    box-sizing: border-box;
+    height: 170px;
+    margin: 10px 15px;
+    padding: 15px 25px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: 0.6s ease;
+    cursor: pointer;
+}
+
+.card1 {
+    background-image: url(./12.jpg);
+    border-radius: 20px;
+}
+
+.card2 {
+    background-image: url(./13.jpg);
+    border-radius: 20px;
+}
+
+.card3 {
+    background-image: url(./14.jpg);
+    border-radius: 20px;
+}
+
+.card4 {
+    background-image: url(./15.jpg);
+    border-radius: 20px;
+}
+
+.card5 {
+    background-image: url(./18.jpg);
+    border-radius: 20px;
+}
+
+.card6 {
+    background-image: url(./17.jpg);
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+/* Dropdown Styles */
+.dropdown {
+    margin-right: 30px;
+  }
+  
+  .dropdown label {
+    display: block;
+    margin-bottom: 5px;
+    color: #fff;
+    font-size: 16px;
+  }
+  
+  .dropdown-textbox {
+    position: relative;
+  }
+  
+  .dropdown-textbox input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .dropdown-options {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: none;
+  }
+  
+  .dropdown-options li {
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  .dropdown-textbox:hover .dropdown-options {
+    display: block;
+  }
+  .datepicker {
+    margin-bottom: 400px;
+    margin-right: 30px;
+}
+
+.datepicker input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.datepicker label {
+    display: block;
+    margin-bottom: 5px;
+    color: #fff;
+    font-size: 16px;
+}
+.counter {
+    margin-top: 20px;
+    margin-left: 0px;
+    margin-bottom: 420px;
+    margin-right: 30px;
+  }
+  
+  .counter label {
+    display: block;
+    margin-bottom: 5px;
+    color: #fff;
+    font-size: 16px;
+  }
+  
+  .counter div {
+    display: flex;
+    align-items: center;
+  }
+  
+  .counter button {
+    padding: 8px;
+    background-color: rgb(195, 7, 7);
+    border: 1px solid rgb(195, 7, 7);
+    border-radius: 4px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 0 5px;
+  }
+  
+  .counter input {
+    width: 50px;
+    padding: 8px;
+    font-size: 16px;
+    text-align: center;
+  }
+
+  /* Add this to your existing CSS */
+
+/* Button Styles */
+.but1 {
+    height: 70px;
+    width: auto;
+    margin-top: 20px;
+    margin-bottom: 400px;
+    padding: 10px 20px;
+    background-color: green;
+    border: 1px solid green;
+    border-radius: 6px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+  }
+  
+  .but1:hover {
+    background-color: darkgreen;
+  }
+  
+  .footer{
+    background:rgb(54, 53, 53);
+    padding:20px 0;
+  }
+  .footer-col{
+    width:22%;
+    padding:0 15px;
+    transition: transform 250ms;
+  }
+  .footer-col h4{
+    font-size: 18px;
+    color:white;
+    text-transform: capitalize;
+    margin-bottom: 30px;
+    font-weight: 500;
+    position: relative;
+  }
+  .footer-col h4::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: blueviolet;
+    height: 2px;
+    box-sizing: border-box;
+    width:50px
+  }
+  .footer-col ul li:not(:last-child){
+    margin-bottom: 10px;
+  }
+  .footer-col li a{
+    font-size: 16px;
+    text-transform: uppercase;
+    color:white ;
+    text-decoration: none;
+    font-weight: 300;
+    display: block;
+    transition: all 0.3s ease;
+  }
+  .footer-col ul li a:hover{
+    padding-left: 10px;
+    cursor: pointer;
+  }
+  .footer-col.social-links a{
+    display: inline-block;
+    height: 40px;
+    margin:0 1rem;
+    width:40px;
+    background: #eee;
+    padding: 25px 50px;
+    margin: 0 10 px 10px 0;
+    text-align: center;
+    border-radius: 50%;
+    color:white;
+    transition: all 0.5s ease;
+  }
+  .footer-col.social-links a:hover{
+    transform: translateY(-2px);
+  }
+  a.youtube {
+    padding: 20px;
+    color: #eb3223;
+  }
+  
+  a.facebook {
+    padding: 20px;
+    color: #4968ad;
+  }
+  
+  a.twitter {
+    padding: 20px;
+    color: #49a1eb;
+  }
+  
+  a.instagram {
+    padding: 20px;
+    color:black;
+  }
+  
